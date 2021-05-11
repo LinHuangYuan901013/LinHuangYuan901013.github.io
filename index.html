@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+    h1 {color:purple;}
+    h2 {color:green;}
+    a:link {
+      color: blue;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+  </style>
+  <title> Webpage </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="icon" href="images/logo.ico" type="image/x-icon"  >
+  </head>
+  <body>
+    <audio controls autoplay="autoplay" loop="loop">
+      <source src="yt1s.com - Inspiring Background Music For Videos  Commercials.mp3" type="audio/mpeg">
+    </audio>
+    <!-- 網頁的內容 -->
+    <h1>林黃媛的個人網頁</h1>
+    <img src="images/IMG_2973.JPG"
+     width="250"
+     height="341">
+    <h2> 我畢業於<a href="http://www.fg.tp.edu.tw/bin/home.php">北一女中</a></h2>  
+    
+    <h2> 現在就讀<a href="https://web.ee.ntu.edu.tw/">台大電機系</a>一年級</h2>  
+    
+    <h2> 我喜歡扯鈴<a href="https://zh.wikipedia.org/wiki/%E7%A9%BA%E7%AB%B9">關於扯鈴</a> 
+         ，還有舞蹈<a href="https://www.youtube.com/watch?v=KNaijO-RLHA">這是2021我參與的電機之夜女舞</a></h2> 
+    <h2>、與研究電容曾經的專題研究<a href="https://twsf.ntsec.gov.tw/activity/race-1/58/pdf/NPHSF2018-050209.pdf">這是我的專題研究</a></h2> 
+    <script language="JavaScript">
+        function ShowTime(){
+      　  var NowDate=new Date();
+          var dd=NowDate.getDate();
+          var mm=(NowDate.getMonth()+1);
+          var yy=("0" + (NowDate.getFullYear())).slice(-4);
+      　  var h=("0" + (NowDate.getHours())).slice(-2);
+      　  var m=("0" + (NowDate.getMinutes())).slice(-2);
+      　  var s=("0" + (NowDate.getSeconds())).slice(-2);　
+      　  document.getElementById('showbox').innerHTML = mm + "-" + dd + "-" + yy + " " + h + ':' + m + ':' + s;
+      　  setTimeout('ShowTime()',1000);
+        }
+        </script>
+        <body onload="ShowTime()">
+        <div id="showbox"></div>
+        </body>
+</html>
